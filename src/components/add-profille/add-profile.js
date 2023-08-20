@@ -2,30 +2,31 @@ import { Button, Divider } from "@mui/material"
 import styles from "./add-profile.module.css"
 import { Link } from "react-router-dom"
 
-function AddProfile() {
+function AddProfile(props) {
     return (
         <div className={styles.addProfile}>
-            <img src="https://panorbit.in/wp-content/uploads/2019/hotlink-ok/1001.jpeg" className={styles.popoverImg} alt="profilePicture"></img>
+            <img src={props.changeAccount.profilepicture} className={styles.popoverImg} alt="profilePicture"></img>
             <div style={{ textAlign: "center", paddingBlock: 15 }}>
                 <div style={{ paddingBottom: 10 }}>
-                    Leanne Graham
+                    {props.changeAccount.name}
                 </div>
                 <div style={{ opacity: 0.5 }}>
-                    Sincere@april.biz
+                    {props.changeAccount.email}
+                </div>
+            </div>
+
+            <Divider />
+            <div className={styles.changeAccount}>
+                <img src="https://panorbit.in/wp-content/uploads/2019/hotlink-ok/1009.jpeg" className={styles.changeAccountImg} alt="profilePicture"></img>
+                <div style={{ paddingLeft: 10 }}>
+                    Glenna Reichert
                 </div>
             </div>
             <Divider />
             <div className={styles.changeAccount}>
-                <img src="https://panorbit.in/wp-content/uploads/2019/hotlink-ok/1001.jpeg" className={styles.changeAccountImg} alt="profilePicture"></img>
+                <img src="https://panorbit.in/wp-content/uploads/2019/hotlink-ok/1010.jpeg" className={styles.changeAccountImg} alt="profilePicture"></img>
                 <div style={{ paddingLeft: 10 }}>
-                    Leanne Graham
-                </div>
-            </div>
-            <Divider />
-            <div className={styles.changeAccount}>
-                <img src="https://panorbit.in/wp-content/uploads/2019/hotlink-ok/1001.jpeg" className={styles.changeAccountImg} alt="profilePicture"></img>
-                <div style={{ paddingLeft: 10 }}>
-                    Leanne Graham
+                    Clementina DuBuque
                 </div>
             </div>
             <div style={{ display: "grid", justifyContent: "center" }}>

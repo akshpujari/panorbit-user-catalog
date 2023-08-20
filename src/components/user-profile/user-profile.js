@@ -23,7 +23,6 @@ function UserProfile() {
 
     const open = Boolean(anchorEl);
     const id = open ? 'simple-popover' : undefined;
-    console.log("location", location)
 
     const [chatUser, setChatUser] = useState(null);
 
@@ -41,7 +40,7 @@ function UserProfile() {
                         Profile
                     </div>
                     <div className={styles.activeAccount}>
-                        <div aria-describedby={id} style={{ display: "flex", alignItems: "center" }} onClick={handleOpen}>
+                        <div aria-describedby={id} style={{ display: "flex", alignItems: "center", fontSize: 16 }} onClick={handleOpen}>
                             <img src={userDetail.profilepicture} className={styles.sidebarImg} alt="profilePicture"></img>
                             <div>
                                 {userDetail.name}
@@ -56,7 +55,7 @@ function UserProfile() {
                         anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }}
                         transformOrigin={{ vertical: 'top', horizontal: 'left' }}
                     >
-                        <AddProfile />
+                        <AddProfile changeAccount={userDetail} />
                     </Popover>
                 </div>
                 <Divider />
