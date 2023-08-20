@@ -1,0 +1,82 @@
+.profileTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.userInfo {
+    margin: 20px 0;
+}
+
+.center,
+.userImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.userImage {
+    padding: 20px 0;
+}
+
+.sidebarImg {
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 10px
+}
+
+.userDetail {
+    display: flex;
+    margin-top: 30px;
+    max-height: calc(100vh - 135px);
+    overflow: auto;
+}
+
+
+.alignRight[class*="MuiTableCell"] {
+    border-bottom: none;
+    text-align: right;
+    padding: 10px 5px;
+    opacity: 0.5;
+}
+
+.alignLeft[class*="MuiTableCell"] {
+    border-bottom: none;
+    text-align: left;
+    padding: 10px 5px;
+}
+
+.companyTitle {
+    text-align: center;
+    padding-top: 20px;
+    opacity: 0.5;
+}
+
+.activeAccount:hover {
+    cursor: pointer;
+}
+
+.alignLeft[class*="MuiTableCell"],
+.alignRight[class*="MuiTableCell"],
+.companyTitle,
+.addressTitle {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.map {
+    margin-top: 2rem;
+}
+
+.map img {
+    width: 100%;
+    border-radius: 1.1rem;
+}
+
+.addressTitle {
+    opacity: 0.5;
+}

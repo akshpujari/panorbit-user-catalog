@@ -1,0 +1,26 @@
+.addProfile {
+    padding: 50px 50px;
+    width: 250px;
+    text-align: center;
+}
+
+.addProfile:hover {
+    cursor: pointer;
+
+}
+
+.popoverImg {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.changeAccountImg {
+    width: 30px;
+    border-radius: 50%;
+}
+
+.changeAccount {
+    display: flex;
+    padding-block: 15px;
+    justify-content: center;
+}

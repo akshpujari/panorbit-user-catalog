@@ -1,0 +1,49 @@
+.sidebar {
+    min-width: 120px;
+    padding: 250px 50px;
+    background-image: linear-gradient(#3a5ac8, #5b3ec7);
+    border-radius: 30px;
+}
+
+.menu {
+    color: #7c7cd6;
+    padding: 15px 0;
+    font-size: 20px;
+    position: relative;
+}
+
+.menu a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.menu:active,
+.menu:hover,
+.menu.active {
+    color: white;
+}
+
+.menu.active::before {
+    content: '❯';
+    position: absolute;
+    right: -73px;
+    top: 20px;
+    display: block;
+    height: 30px;
+    width: 30px;
+    color: #aaa;
+    z-index: 1;
+    font-size: 16px;
+}
+
+.menu.active::after {
+    content: '';
+    display: block;
+    height: 30px;
+    width: 40px;
+    background-color: white;
+    position: absolute;
+    right: -74px;
+    top: 15px;
+    border-radius: 50%;
+}

@@ -1,0 +1,9 @@
+.comingSoon {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 80px;
+    opacity: 0.3;
+}

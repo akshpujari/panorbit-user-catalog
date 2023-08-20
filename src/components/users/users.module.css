@@ -1,0 +1,52 @@
+.akshCenter {
+    background-image: url(/public/wave.png);
+    background-size: cover;
+}
+
+.akshCenter,
+.accountTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.accountTitle {
+    padding: 40px 0;
+    background: #f7f7f7;
+    font-size: 23px;
+    font-weight: 500;
+    top: 0;
+    border-radius: 30px 30px 0 0;
+}
+
+.bottomSpace {
+    bottom: 0;
+    height: 20px;
+    background-color: white;
+}
+
+.accountTitle,
+.bottomSpace {
+    position: sticky;
+    z-index: 1;
+    width: 600px;
+}
+
+
+.akshCard {
+    width: 600px;
+    margin-top: 10%;
+    height: 550px;
+    overflow: scroll !important;
+    border-radius: 30px !important;
+    position: relative;
+}
+
+.users {
+    padding: 0 35px;
+}
+
+.user:hover {
+    cursor: pointer;
+    background-color: #efefef;
+}
