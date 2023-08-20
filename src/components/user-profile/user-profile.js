@@ -41,8 +41,8 @@ function UserProfile() {
                     </div>
                     <div className={styles.activeAccount}>
                         <div aria-describedby={id} style={{ display: "flex", alignItems: "center", fontSize: 16 }} onClick={handleOpen}>
-                            <img src={userDetail.profilepicture} className={styles.sidebarImg} alt="profilePicture"></img>
-                            <div>
+                            <img src={userDetail.profilepicture} className={styles.changeProfileImg} alt="profilePicture"></img>
+                            <div className={styles.username}>
                                 {userDetail.name}
                             </div>
                         </div>
@@ -60,7 +60,7 @@ function UserProfile() {
                 </div>
                 <Divider />
                 <div className={styles.userDetail}>
-                    <div style={{ width: "40%" }}>
+                    <div className={styles.user}>
                         <div className={styles.userImage}>
                             <img src={userDetail.profilepicture} style={{
                                 width: 200,
@@ -121,7 +121,7 @@ function UserProfile() {
                         </Table>
                     </div>
                     <Divider orientation="vertical" flexItem />
-                    <div style={{ width: '60%', paddingLeft: 20 }}>
+                    <div className={styles.address}>
                         <div>
                             <div className={styles.addressTitle}>
                                 Address

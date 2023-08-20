@@ -23,7 +23,7 @@
     padding: 20px 0;
 }
 
-.sidebarImg {
+.changeProfileImg {
     width: 35px;
     border-radius: 50%;
     margin-right: 10px
@@ -79,4 +79,41 @@
 
 .addressTitle {
     opacity: 0.5;
+}
+
+.user {
+    width: 40%;
+}
+
+.address {
+    width: '60%';
+    padding-left: 20px
+}
+
+@media screen and (max-width:600px) {
+    .userDetail {
+        display: block;
+    }
+
+    .user {
+        width: 100%;
+    }
+
+    .addressTitle {
+        text-align: center;
+        padding: 13px 0;
+    }
+
+    .companyTitle {
+        padding: 14px 0;
+    }
+
+    .username {
+        display: none;
+    }
+
+    .changeProfileImg {
+        margin-right: 30px;
+    }
+
 }
